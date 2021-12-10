@@ -10,7 +10,7 @@ import azure.functions as func
 def schedule(payload_create, emailx):
     s = requests.session()
     url = "https://888bellevue.activebuilding.com/login"
-    payload = {'username': emailx,'password':'Ocamic3+'}
+    payload = {'username': emailx,'password':'password'}
     response = s.post(url, data = payload)
     print('login',response.content)
     print('login response',response.status_code)
